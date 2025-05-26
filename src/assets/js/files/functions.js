@@ -55,35 +55,41 @@ export let bodyLock = () => {
 /*
 Сниппет (HTML): smenu
 */
-export function menuInit() {
-	if (document.querySelector(".icon-menu")) {
-		document.addEventListener("click", function (e) {
-			if (e.target.closest('.icon-menu')) {
-				bodyLockToggle();
-				document.documentElement.classList.toggle("menu-open");
-			}
-		});
-	};
-}
-export function menuOpen() {
-	bodyLock();
-	document.documentElement.classList.add("menu-open");
-}
-export function menuClose() {
-	bodyUnlock();
-	document.documentElement.classList.remove("menu-open");
-}
+document.addEventListener("DOMContentLoaded", function () {
+  const burgerButton = document.querySelector(".burger");
+  const sideMenu = document.getElementById("sideMenu");
+  const closeButton = document.getElementById("closeMenu");
 
+  // Функция закрытия меню
+  function closeMenu() {
+    sideMenu.classList.remove("_active");
+    document.documentElement.classList.remove("lock");
+  }
 
-// Модуль работы с подменю ========================================================================================================================================================
-export function subMenu() {
-	let menuDropdown = document.querySelectorAll(".menu__item ._icon-chevron-down");
-	if (menuDropdown.length > 0) menuDropdown.forEach((element => {
-		let parent = element.closest(".menu__item");
-		parent.addEventListener("click", (function(e) {
-			let openElement = document.querySelector(".menu__item._active");
-			if (openElement && openElement !== parent) openElement.classList.toggle("_active");
-			parent.classList.toggle("_active");
-		}));
-	}));
-}
+  // Открыть меню
+  burgerButton.addEventListener("click", function () {
+    sideMenu.classList.add("_active");
+    document.documentElement.classList.add("lock");
+  });
+
+  // Закрыть меню по кнопке
+  closeButton.addEventListener("click", closeMenu);
+
+  // Закрытие по нажатию ESC
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && sideMenu.classList.contains("_active")) {
+      closeMenu();
+    }
+  });
+
+  // Закрытие по клику вне меню
+  document.addEventListener("click", function (e) {
+    if (
+      sideMenu.classList.contains("_active") &&
+      !sideMenu.contains(e.target) &&
+      !burgerButton.contains(e.target)
+    ) {
+      closeMenu();
+    }
+  });
+});

@@ -1,6 +1,69 @@
 @@include("header/header.html") <!-- ✅ Подключаем хедер -->
 <main class="main">
+ <section class="hero">
+  <video class="hero__video blur" preload="auto" playsinline autoplay loop muted>
+    <source src="https://dl.dropboxusercontent.com/scl/fi/ihp4sy26y4r7i6noebsl2/10.mp4?rlkey=r6dcqejhggqlw3uj1o2yute53&st=cwori8zg&dl=0 " type="video/mp4">
+  </video>
+  <div class="wrapper _container container__hero">
+    <div class="hero__content">
+        <div class="hero__title-block-top">
+            <span class="hero__title">ИНДИВИДУАЛЬНЫЙ</span>
+                  <p class="hero__subtitle"> Создаем стильные интерьеры,
+                    в которых удобно жить</p>
+        </div>
+        <div class="hero__title-block-bottom">
+                  <h1 class="hero__title"> ДИЗАЙН-ПРОЕКТ</h1>
+        </div>      
+      <form class="hero__contacts">
+        <input type="tel" placeholder="+7 (___) ___-__-__" class="hero__phone-input" required>
+        <button type="submit" class="hero__button">РАССЧИТАТЬ СТОИМОСТЬ</button>
+      </form>
+      
+      <div class="hero__consent">
+        <label class="hero__checkbox-label">
+          <input type="checkbox" class="hero__checkbox" checked>
+          <span class="hero__checkbox-custom"></span>
+          Даю согласие на обработку моих персональных данных
+        </label>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="projects">
+  <div class="projects__header">
+    <h1 class="projects__title">РЕАЛИЗОВАННЫЕ ДИЗАЙН-ПРОЕКТЫ</h1>
+    
+    <div class="projects__categories">
+      <button class="projects__category projects__category--active">КВАРТИРЫ</button>
+      <button class="projects__category">ДОМА/ТАУНХАУСЫ</button>
+      <button class="projects__category">КОММЕРЧЕСКИЕ ПОМЕЩЕНИЯ</button>
+    </div>
+  </div>
   
+  <div class="projects__list">
+    
+    <div class="projects__item">
+                <img src="assets/img/project-1.png">
+
+      <h3 class="projects__item-title">ЖК "БОТАНИЧЕСКИЙ САД"</h3>
+      <p class="projects__item-area">92 м<sup>2</sup></p>
+    </div>
+    
+    <div class="projects__item">
+                <img src="assets/img/project-2.png">
+
+      <h3 class="projects__item-title">ЖК "NEADLINER"</h3>
+      <p class="projects__item-area">100 м<sup>2</sup></p>
+    </div>
+    
+    <div class="projects__item">
+                <img src="assets/img/project-3.png">
+
+      <h3 class="projects__item-title">ЖК "СЕРЕБРЯНЫЙ ФОНТАН"</h3>
+      <p class="projects__item-area">95 м<sup>2</sup></p>
+    </div>
+  </div>
+</section>
 </main>
 <script src="assets/js/main.js"></script>
 @@include("footer/footer.html") <!-- ✅ Подключаем футер -->

@@ -3,102 +3,222 @@
 //====================================================================================================
 
 //Burger
-/*
 
-// Двумя слешами помечен старый вариант
+
+ //Двумя слешами помечен старый вариант
+.header-container {
+	position: fixed;
+	min-height: 70px;
+	width: 100%;
+	background-color: #eee;
+	z-index: 9999;
+}
+ 
 .header {
-	//position: relative;
-}
 
+		// .header__menu
 
-
-
-@media (max-width: $mobile) {
-	.header__logo {
-		z-index: 5;
-	}
-
-	.menu__body {
-		background-color: rgba(228, 36, 228, 0.993);
-		position: fixed;
-		display: block;
-		top: 0;
-		right: -100%;
-		width: 100%;
-		//position: absolute;
-		//top: 100%;
-		//min-height: 100vh;
-		//height: calc(100% - 50px);
-		height 100%
-		padding: 30px;
-		padding-top: 100px;
-		transition: right 0.5s ease;
-		overflow: auto;
-
-		// .menu__body::before
-		&::before {
-			content:"";
-			position: fixed;
-			width: 100%;
-			top: 0;
-			left: 0;
-			height: 70px
-			background-color: #fff;
-			z-index: 2;
+		&__menu {
+				display: flex;
+    		align-items: center;
+   		    justify-content: space-between;
+			gap: 30px;
 		}
-	}
+
+		&__logo-image {
+			width: 100px;
+			height: 70px;
+		}
 }
+.menu {
+
+		// .menu__icon
+
+		&__icon {
+		}
+
+		// .menu__body
+
+		&__body {
+			    width: 100%;
+    justify-content: space-around;
+			display: flex;
+    		align-items: center;
+		}
+
+		// .menu__list
+
+		&__list {
+			// width: 100%;
+			display: flex;
+			gap: 30px;
+		
+		}
+
+		// .menu__item
+
+		&__item {
+			width: max-content;
+		}
+
+		// .menu__link
+
+		&__link {
+			text-transform: uppercase;
+		}
+}
+
+
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.burger span {
+  display: block;
+  height: 4px;
+  background-color: #000;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.burger span:nth-child(1),
+.burger span:nth-child(3) {
+  width: 100%;
+}
+
+.burger .middle {
+  width: 70%;
+  align-self: flex-start;
+}
+
+/* Выезжающее меню */
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 30%;
+  height: 100%;
+  background: #86836D;
+  color: white;
+  padding: 40px 20px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.side-menu._active {
+  right: 0;
+}
+
+.close-menu {
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.side-menu__list {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu__list li {
+  padding: 12px 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.side-menu__footer {
+  font-size: 14px;
+  margin-top: auto;
+}
+
 
 .menu-open .menu__body {
 	display: block;
 	right: 0;
 }
-	
+
+
 .icon-menu {
-	display: none;
+
 	@media (max-width: 767px) {
+
+		
 		display: block;
-		position: relative;
-		width: rem(30);
-		height: rem(18);
-		cursor: pointer;
-		z-index: 5;
-		span,
-		&::before,
-		&::after {
-			content: "";
-			transition: all 0.3s ease 0s;
-			right: 0;
-			position: absolute;
-			width: 100%;
-			height: 2px;
-			background-color: #000;
-		}
-		&::before {
-			top: 0;
-		}
-		&::after {
-			bottom: 0;
-		}
-		span {
-			top: calc(50% - rem(1));
-		}
-		.menu-open & {
-			span {
-				width: 0;
-			}
-			&::before,
-			&::after {
-			}
-			&::before {
-				top: calc(50% - rem(1));
-				transform: rotate(-45deg);
-			}
-			&::after {
-				bottom: calc(50% - rem(1));
-				transform: rotate(45deg);
-			}
-		}
+		
+
 	}
 }
-*/
+
+.side-menu__footer {
+	font-size: 18px;
+}
+
+.side-menu__footer-contact {
+	margin-bottom: 20px;
+	font-weight: 400;
+}
+
+.side-menu__footer-descr {
+	font-weight: 500;
+		margin-bottom: 20px;
+
+}
+
+.side-menu__image {
+	width: 40px;
+	height: 40px;
+}
+
+.socials {
+	display: flex;
+	justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+	.menu__list:nth-child(2) > .menu__item:nth-child(1), .menu__item:nth-child(2){
+    display: none;
+}
+
+.header__menu {
+    gap: 10px;
+}
+
+.menu__link {
+	font-size: 12px;
+}
+
+.header__logo-image {
+    width: max-content;
+    height: 2rem;
+}
+
+.side-menu {
+	width: 80%;
+}
+
+.burger {
+    width: 19px;
+    height: 15px;
+}
+
+.burger span{
+    height: 2px;
+}
+}

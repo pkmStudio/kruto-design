@@ -4,6 +4,9 @@ import * as sass from "sass";
 import gulpSass from "gulp-sass";
 import rename from "gulp-rename";
 import postcss from "gulp-postcss";
+import combineMediaQueries from "postcss-combine-media-query";
+import sortMediaQueries from "postcss-sort-media-queries";
+
 import autoprefixer from "autoprefixer";
 import cleanCSS from "gulp-clean-css";
 import webp from "gulp-webp";
@@ -42,7 +45,7 @@ const styles = () =>
         .pipe(compileSass().on("error", compileSass.logError))
         .pipe(postcss([
             autoprefixer(),
-            combineMediaQuery(), // Объединяет одинаковые медиа-запросы
+            combineMediaQueries(), // Объединяет одинаковые медиа-запросы
             sortMediaQueries({
                 sort: 'mobile-first' // или 'desktop-first'
               }),  // Сортирует медиа-запросы (по возрастанию или убыванию)
@@ -78,9 +81,9 @@ const scripts = () =>
             webpack({
                 mode: "production",
                 output: { filename: "main.js" },
-                module: {
-                    rules: [{ test: /\.js$/, exclude: /node_modules/, use: "babel-loader" }],
-                },
+                // module: {
+                //     rules: [{ test: /\.js$/, exclude: /node_modules/, use: "babel-loader" }],
+                // },
                 optimization: {
                     usedExports: true,
                     minimize: false, // ❌ Отключить минификацию - false
@@ -95,6 +98,10 @@ const watchFiles = () => {
     watch("src/assets/scss/**/*.scss", styles);
     watch(paths.images, images);
     watch("src/assets/js/**/*.js", scripts);
+
+    watch("src/assets/components/**/*.html", html);
+    watch("src/assets/components/**/*.scss", styles);
+    // watch("src/assets/components/**/*.js", scripts);
 };
 
 // 🔹 Запуск сервера
