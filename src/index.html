@@ -29,9 +29,15 @@
     </div>
   </div>
 </section>
-<section class="projects">
+<div class="wrapper _container">
+
+
+<section class="projects ">
   <div class="projects__header">
-    <h1 class="projects__title">РЕАЛИЗОВАННЫЕ ДИЗАЙН-ПРОЕКТЫ</h1>
+    <div class="projects__header-top">
+<h1 class="projects__title">РЕАЛИЗОВАННЫЕ ДИЗАЙН-ПРОЕКТЫ</h1>
+    <button class="_btn btn-project">Посмотреть всё</button>
+    </div>
     
     <div class="projects__categories">
       <button class="projects__category projects__category--active">КВАРТИРЫ</button>
@@ -43,27 +49,114 @@
   <div class="projects__list">
     
     <div class="projects__item">
-                <img src="assets/img/project-1.png">
-
-      <h3 class="projects__item-title">ЖК "БОТАНИЧЕСКИЙ САД"</h3>
+      <div class="projects__item_block-image">
+   <img src="assets/img/project-1.png" class="projects__item-image">
+      </div>
+             
+      <div class="projects__item-block-info">
+           <h3 class="projects__item-title">ЖК "БОТАНИЧЕСКИЙ САД"</h3>
       <p class="projects__item-area">92 м<sup>2</sup></p>
+      </div>
     </div>
     
     <div class="projects__item">
-                <img src="assets/img/project-2.png">
+                 <div class="projects__item_block-image">
+   <img src="assets/img/project-2.png" class="projects__item-image">
+      </div>
+            <div class="projects__item-block-info">
 
       <h3 class="projects__item-title">ЖК "NEADLINER"</h3>
       <p class="projects__item-area">100 м<sup>2</sup></p>
+      </div>
     </div>
     
     <div class="projects__item">
-                <img src="assets/img/project-3.png">
+                 <div class="projects__item_block-image">
+   <img src="assets/img/project-3.png" class="projects__item-image">
+      </div>
+            <div class="projects__item-block-info">
 
       <h3 class="projects__item-title">ЖК "СЕРЕБРЯНЫЙ ФОНТАН"</h3>
       <p class="projects__item-area">95 м<sup>2</sup></p>
+      </div>
     </div>
   </div>
 </section>
+</div>
+
+<section class="promo-form">
+  <div class="wrapper _container">
+  <div class="promo">
+  <div class="promo__content">
+    <h2 class="promo__title">
+      Узнайте, сколько стоит дизайн-проект с полной реализацией в 2025 году
+    </h2>
+    <p class="promo__description">
+      Собрали для вас бесплатный каталог из 9 законченных проектов со всей стоимостью ремонтных работ, черновых и отделочных материалов, мебели, освещения и техники.
+    </p>
+    <form class="promo__form">
+      <div class="promo__input-wrapper">
+        <div class="promo__phone-input">
+          <img src="https://flagcdn.com/w40/ru.png" alt="RU" class="promo__flag" />
+          <input type="tel" placeholder="+7 (999) 999-99-99" class="promo__input" />
+        </div>
+        <button type="submit" class="promo__button">Скачать</button>
+      </div>
+      <label class="hero__checkbox-label">
+          <input type="checkbox" class="hero__checkbox" checked>
+          <span class="hero__checkbox-custom"></span>
+          Даю согласие на обработку моих персональных данных
+        </label>
+    </form>
+  </div>
+  <div class="promo__image-wrapper">
+    <img src="assets/img/desctop-form.png" alt="Каталог дизайн-проектов" class="promo__image" />
+  </div>
+    </div>
+    </div>
+</section>
+
+  <div class="wrapper _container">
+<section class="roomtour">
+  <div class="roomtour__content">
+    <h2 class="roomtour__title">
+      Приглашаем в рум-тур по реализованному нами дизайн-проекту под ключ
+    </h2>
+    <p class="roomtour__description">
+      Как мы разместили 4 комнаты в 100 кв.м., сохранив вместительность и функциональность всех помещений. Обзор нашего проекта с заказчиком в ЖК «Headliner»
+    </p>
+  </div>
+
+  <div class="roomtour__video-wrapper">
+    <div class="roomtour__video-preview" id="video-preview">
+      <iframe width="100%" height="305" src="https://rutube.ru/play/embed/e1c652d9b916e938e0e66be5d1cdce56/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+    </div>
+
+    <!-- Контейнер для вставки iframe -->
+    <div class="roomtour__video-iframe" id="video-iframe" style="display: none;">
+      
+    </div>
+  </div>
+</section>
+
+
+
+  <section class="compare">
+    <div class="_container">
+     <h2 class="roomtour__title">
+        До и после
+      </h2>
+      <div class="compare__wrapper">
+      <iframe frameborder="0" class="juxtapose" width="100%" height="542" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=8a690bd0-378f-11ef-9396-d93975fe8866"></iframe>
+<div class="compare__header">
+<h3 class="_h3 compare__block-title">РЕАЛИЗОВАННЫЕ ДИЗАЙН-ПРОЕКТЫ</h3>
+    <button class="_btn btn-project">Посмотреть всё</button>
+    </div>
+      </div>
+    </div>
+  </section>
+
+</div>
 </main>
 <script src="assets/js/main.js"></script>
 @@include("footer/footer.html") <!-- ✅ Подключаем футер -->

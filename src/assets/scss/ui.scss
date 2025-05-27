@@ -24,7 +24,7 @@
 /* UI */
 body {
     font-family: "Inter", sans-serif;
-    color: var(--light);
+    color: var(--dark);
 }
 
 ._container {
@@ -38,4 +38,11 @@ body {
     line-height: 120%;
     font-weight: 600;
     color: var(--light);
+}
+
+._btn {
+    padding: 15px 30px;
+    border: 1px solid var(--gray-alt);
+        -webkit-place-self: center;
+    align-self: anchor-center;
 }
