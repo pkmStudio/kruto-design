@@ -4,6 +4,7 @@ import * as sass from "sass";
 import gulpSass from "gulp-sass";
 import rename from "gulp-rename";
 import postcss from "gulp-postcss";
+import tailwindcss from "@tailwindcss/postcss";
 import combineMediaQueries from "postcss-combine-media-query";
 import sortMediaQueries from "postcss-sort-media-queries";
 
@@ -24,6 +25,7 @@ const bs = browserSync.create();
 const paths = {
     html: "src/*.html",
     scss: "src/assets/scss/style.scss",
+    css: "src/assets/scss/main.css",
     js: "src/assets/js/main.js",
     images: "src/assets/img/**/*.{png,jpg}",
     fonts: "src/assets/fonts/**/*",
@@ -54,6 +56,14 @@ const styles = () =>
         .pipe(cleanCSS({ level: 2 }))
         .pipe(rename({ suffix: ".min" }))
         .pipe(dest("dist/assets/css"));
+
+const stylesTw = () =>
+    src(paths.css)
+        .pipe(postcss([
+            tailwindcss,
+            autoprefixer(),
+        ]))
+        .pipe(dest("dist/assets/css"))
 
 // 🔹 Оптимизация изображений (WebP)
 const images = () =>
@@ -95,6 +105,7 @@ const scripts = () =>
 // 🔹 Наблюдение за изменениями
 const watchFiles = () => {
     watch(paths.html, html);
+    watch(paths.html, stylesTw);
     watch("src/assets/scss/**/*.scss", styles);
     watch(paths.images, images);
     watch("src/assets/js/**/*.js", scripts);
@@ -121,6 +132,6 @@ const serve = () => {
 // 🔹 Экспорт задач с очисткой перед сборкой
 export default series(
     cleanDist, // 📌 Сначала очищает `dist/`
-    parallel(html, styles, images, fonts, svg, scripts), // 📌 Затем запускает сборку
+    parallel(html, styles, images, fonts, svg, scripts, stylesTw), // 📌 Затем запускает сборку
     parallel(serve, watchFiles) // 📌 Потом сервер и слежку за файлами
 );
