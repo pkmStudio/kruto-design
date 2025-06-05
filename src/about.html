@@ -1,26 +1,26 @@
 @@include("header/header.html") <!-- ✅ Подключаем хедер -->
 <main class="main">
-    <section class="bg-white py-8 md:py-14">
+    <section class="py-12">
         <div class="mx-auto max-w-[1200px] px-4 md:px-6">
             <div class="flex flex-col md:flex-row gap-8 md:gap-12">
                 <!-- Левая колонка (заголовок + статистика) -->
                 <div class=" flex flex-col gap-10 md:gap-14">
-                    <h1 class="text-2xl md:text-[40px] font-bold font-inter uppercase md:leading-[50px]">
+                    <h1 class="text-2xl md:text-[40px] font-black font-inter uppercase md:leading-[50px]">
                         о студии<br/>kD design
                     </h1>
 
                     <div class="grid grid-cols-2 gap-4 md:gap-6">
                         <div>
-                            <h2 class="text-lg md:text-2xl font-bold font-inter uppercase">7 лет</h2>
+                            <h2 class="text-lg md:text-2xl font-black font-inter uppercase md:mb-12 mb-3">7 лет</h2>
                         </div>
                         <div>
-                            <h2 class="text-lg md:text-2xl font-bold font-inter uppercase">500+ проектов</h2>
+                            <h2 class="text-lg md:text-2xl font-black font-inter uppercase  md:mb-12 mb-3">500+ проектов</h2>
                         </div>
                         <div>
-                            <h2 class="text-lg md:text-2xl font-bold font-inter uppercase">55 человек</h2>
+                            <h2 class="text-lg md:text-2xl font-black font-inter uppercase  md:mb-12 mb-3">55 человек</h2>
                         </div>
                         <div>
-                            <h2 class="text-lg md:text-2xl font-bold font-inter uppercase">275 проектов<br/>"под ключ"</h2>
+                            <h2 class="text-lg md:text-2xl font-black font-inter uppercase  md:mb-12 mb-3">275 проектов<br/>"под ключ"</h2>
                         </div>
                     </div>
                 </div>
@@ -28,7 +28,7 @@
                 <!-- Правая колонка (текст) -->
                 <div class="md:w-[630px] flex flex-col gap-4 md:gap-6">
                     <p class="text-sm font-inter uppercase leading-tight">
-                        <span class="font-bold">KD DESIGN</span><span class="font-normal">* — это студия дизайна интерьера и ремонта под ключ.</span>
+                        <span class="font-black">KD DESIGN</span><span class="font-normal">* — это студия дизайна интерьера и ремонта под ключ.</span>
                     </p>
 
                     <p class="text-sm font-inter uppercase font-normal leading-tight">
@@ -50,13 +50,13 @@
             </div>
         </div>
     </section>
-    <div class="container max-w[1200px] mx-auto w-full py-20 overflow-hidden">
+    <div class="container max-w[1200px] mx-auto w-full py-8 overflow-hidden">
         <div class="h-px bg-black"></div>
     </div>
-    <div class="bg-white">
+    <section class="py-12">
         <!-- Заголовок -->
-        <div class="py-5 md:py-8 px-4 md:px-0 max-w-[1210px] mx-auto">
-            <h2 class="text-xl md:text-4xl font-bold font-inter text-center md:text-left md:leading-[71px]">
+        <div class="py-5 md:py-8 px-4 md:px-0 max-w-[1200px] mx-auto">
+            <h2 class="text-2xl md:text-[40px] font-black font-inter text-center md:text-left md:leading-[71px]">
                 НАША КОМАНДА
             </h2>
         </div>
@@ -140,12 +140,69 @@
                 <!-- Остальные карточки по аналогии -->
                 <!-- ... -->
             </div>
-
         </div>
-    </div>
+    </section>
 
-    <!-- Подключаем Swiper JS и CSS -->
+    <section class="container max-w-[1200px] mx-auto py-12 px-4 md:px-6">
+        <!-- Заголовок -->
+        <h2 class="text-2xl md:text-[40px] font-black font-inter uppercase md:leading-[71px] mb-10 text-center md:text-left">
+            Мы в социальных сетях
+        </h2>
 
+        <div class="w-full flex justify-between gap-22">
+            <!-- Левая колонка - Соцсети -->
+            <div class="md:basis-560">
+                <!-- Grid контейнер для соцсетей и линий -->
+                <div class="border-t border-black">
+                    <!-- Instagram -->
+                    <div class="grid grid-cols-6 gap-16 pt-6 pb-6 border-b border-black">
+                        <div class="row-span-1 text-sm md:text-base font-black font-inter ">/01</div>
+                        <div class="row-span-1 text-2xl md:text-[40px] font-normal font-inter ">INSTAGRAM*</div>
+                    </div>
+
+                    <!-- YouTube -->
+                    <div class="grid grid-cols-6 gap-16 pt-6 pb-6 border-b border-black">
+                        <div class="row-span-1 text-sm md:text-base font-black font-inter ">/02</div>
+                        <div class="row-span-1 text-2xl md:text-[40px] font-normal font-inter ">YOUTUBE</div>
+                    </div>
+
+                    <!-- WhatsApp -->
+                    <div class="grid grid-cols-6 gap-16 pt-6 pb-6  border-b border-black">
+                        <div class="row-span-1 text-sm md:text-base font-black font-inter ">/03</div>
+                        <div class="row-span-1 text-2xl md:text-[40px] font-normal font-inter ">WHATSAPP</div>
+                    </div>
+
+                    <!-- Telegram -->
+                    <div class="grid grid-cols-6 gap-16 pt-6 pb-6  border-b border-black">
+                        <div class="row-span-1 text-sm md:text-base font-black font-inter ">/04</div>
+                        <div class="row-span-1 text-2xl md:text-[40px] font-normal font-inter ">TELEGRAM</div>
+                    </div>
+
+                    <!-- VKontakte -->
+                    <div class="grid grid-cols-6 gap-16 pt-6 pb-6  border-b border-black">
+                        <div class="row-span-1 text-sm md:text-base font-black font-inter ">/05</div>
+                        <div class="row-span-1 text-2xl md:text-[40px] font-normal font-inter ">VKONTAKTE</div>
+                    </div>
+
+                    <!-- Яндекс.Дзен -->
+                    <div class="grid grid-cols-6 gap-16 pt-6 pb-6  border-b border-black">
+                        <div class="row-span-1 text-sm md:text-base font-black font-inter ">/06</div>
+                        <div class="row-span-1 text-2xl md:text-[40px] font-normal font-inter ">ЯНДЕКС.ДЗЕН</div>
+                    </div>
+                </div>
+
+                <!-- Примечание -->
+                <div class="text-xs md:text-sm font-normal font-inter">
+                    *принадлежит компании Meta, признанной экстремистской организацией и запрещенной в РФ
+                </div>
+            </div>
+
+            <!-- Правая колонка - Изображение (только на десктопе) -->
+            <div class="hidden md:block basis-520">
+                <img class="w-full h-auto" src="https://placehold.co/520x606" alt="Социальные сети">
+            </div>
+        </div>
+    </section>
 </main>
 <script src="assets/js/main.js"></script>
 @@include("footer/footer.html") <!-- ✅ Подключаем футер -->
