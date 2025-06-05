@@ -32,6 +32,7 @@ function initSliders() {
             slidesPerView: 'auto',
             spaceBetween: 20,
             autoHeight: true,
+            loop: true,
             speed: 800,
 
             //touchRatio: 0,
@@ -58,11 +59,10 @@ function initSliders() {
 
 
             // Скроллбар
-
-            scrollbar: {
-                el: '.swiper-scrollbar',
-                draggable: true,
-            },
+            // scrollbar: {
+            //     el: '.swiper-scrollbar',
+            //     draggable: true,
+            // },
 
 
             // Кнопки "влево/вправо"

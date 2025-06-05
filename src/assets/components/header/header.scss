@@ -8,10 +8,12 @@
  //Двумя слешами помечен старый вариант
 .header-container {
 	position: sticky;
+  top: 0;
 	min-height: 70px;
 	width: 100%;
 	background-color: #eee;
 	z-index: 9999;
+
 }
  
 .header {
