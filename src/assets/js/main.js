@@ -26,3 +26,5 @@ pkmFunctions.addTouchClass();
 /* Модуль для работы с меню (Бургер) */
 // pkmFunctions.menuInit();
 
+/* Слайдер свайпер */
+import "./files/swiper.js";

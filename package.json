@@ -24,5 +24,8 @@
     "tailwindcss": "^4.1.8",
     "webpack": "^5.99.5",
     "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "swiper": "^11.2.8"
   }
 }
