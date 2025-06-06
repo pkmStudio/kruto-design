@@ -10045,8 +10045,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const socialSection = document.querySelector('.social-item');
 
     // Если элементов нет - прекращаем выполнение
-    if (!socialSection || window.innerWidth < 768) {
-        console.log(123);}//return;
+    if (!socialSection || window.innerWidth < 768) return;
 
     const socialItems = document.querySelectorAll('.social-item');
     const previewImages = document.querySelectorAll('[data-preview]');
