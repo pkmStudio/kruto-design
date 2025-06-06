@@ -28,3 +28,6 @@ pkmFunctions.addTouchClass();
 
 /* Слайдер свайпер */
 import "./files/swiper.js";
+
+/* секция social*/
+import "../components/social-section/social-section.js"

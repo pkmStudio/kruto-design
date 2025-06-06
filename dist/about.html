@@ -146,7 +146,7 @@
     <div class="container max-w[1200px] mx-auto w-full py-8 overflow-hidden">
         <div class="h-px bg-black"></div>
     </div>
-    <section class="py-12">
+    <section class="py-12 md:px-6">
         <!-- Заголовок -->
         <div class="py-5 md:py-8 px-4 md:px-0 max-w-[1200px] mx-auto">
             <h2 class="text-2xl md:text-[40px] font-black font-inter text-center md:text-left md:leading-[71px]">
@@ -236,65 +236,73 @@
     </section>
 
     <section class="container max-w-[1200px] mx-auto py-12 px-4 md:px-6">
-        <!-- Заголовок -->
-        <h2 class="text-2xl md:text-[40px] font-black font-inter uppercase md:leading-[71px] mb-10 text-center md:text-left">
-            Мы в социальных сетях
-        </h2>
+    <!-- Заголовок -->
+    <h2 class="text-2xl md:text-[40px] font-black font-inter uppercase md:leading-[71px] mb-10 text-center md:text-left">
+        Мы в социальных сетях
+    </h2>
 
-        <div class="w-full flex justify-between gap-22">
-            <!-- Левая колонка - Соцсети -->
-            <div class="md:basis-560">
-                <!-- Grid контейнер для соцсетей и линий -->
-                <div class="border-t border-black">
-                    <!-- Instagram -->
-                    <div class="grid grid-cols-6 gap-16 pt-6 pb-6 border-b border-black">
-                        <div class="row-span-1 text-sm md:text-base font-black font-inter ">/01</div>
-                        <div class="row-span-1 text-2xl md:text-[40px] font-normal font-inter ">INSTAGRAM*</div>
-                    </div>
-
-                    <!-- YouTube -->
-                    <div class="grid grid-cols-6 gap-16 pt-6 pb-6 border-b border-black">
-                        <div class="row-span-1 text-sm md:text-base font-black font-inter ">/02</div>
-                        <div class="row-span-1 text-2xl md:text-[40px] font-normal font-inter ">YOUTUBE</div>
-                    </div>
-
-                    <!-- WhatsApp -->
-                    <div class="grid grid-cols-6 gap-16 pt-6 pb-6  border-b border-black">
-                        <div class="row-span-1 text-sm md:text-base font-black font-inter ">/03</div>
-                        <div class="row-span-1 text-2xl md:text-[40px] font-normal font-inter ">WHATSAPP</div>
-                    </div>
-
-                    <!-- Telegram -->
-                    <div class="grid grid-cols-6 gap-16 pt-6 pb-6  border-b border-black">
-                        <div class="row-span-1 text-sm md:text-base font-black font-inter ">/04</div>
-                        <div class="row-span-1 text-2xl md:text-[40px] font-normal font-inter ">TELEGRAM</div>
-                    </div>
-
-                    <!-- VKontakte -->
-                    <div class="grid grid-cols-6 gap-16 pt-6 pb-6  border-b border-black">
-                        <div class="row-span-1 text-sm md:text-base font-black font-inter ">/05</div>
-                        <div class="row-span-1 text-2xl md:text-[40px] font-normal font-inter ">VKONTAKTE</div>
-                    </div>
-
-                    <!-- Яндекс.Дзен -->
-                    <div class="grid grid-cols-6 gap-16 pt-6 pb-6  border-b border-black">
-                        <div class="row-span-1 text-sm md:text-base font-black font-inter ">/06</div>
-                        <div class="row-span-1 text-2xl md:text-[40px] font-normal font-inter ">ЯНДЕКС.ДЗЕН</div>
-                    </div>
+    <div class="w-full flex justify-between gap-22">
+        <!-- Левая колонка - Соцсети -->
+        <div class="md:basis-560">
+            <!-- Grid контейнер для соцсетей и линий -->
+            <div class="border-t border-black">
+                <!-- Instagram -->
+                <div data-social="instagram" class="social-item cursor-pointer grid grid-cols-6 gap-16 pt-6 pb-6 border-b border-black">
+                    <div class="row-span-1 text-sm md:text-base font-black font-inter ">/01</div>
+                    <div class="row-span-1 text-2xl md:text-[40px] font-normal font-inter ">INSTAGRAM*</div>
                 </div>
 
-                <!-- Примечание -->
-                <div class="text-xs md:text-sm font-normal font-inter">
-                    *принадлежит компании Meta, признанной экстремистской организацией и запрещенной в РФ
+                <!-- YouTube -->
+                <div data-social="youTube" class="social-item cursor-pointer grid grid-cols-6 gap-16 pt-6 pb-6 border-b border-black">
+                    <div class="row-span-1 text-sm md:text-base font-black font-inter ">/02</div>
+                    <div class="row-span-1 text-2xl md:text-[40px] font-normal font-inter ">YOUTUBE</div>
+                </div>
+
+                <!-- WhatsApp -->
+                <div data-social="whatsapp" class="social-item cursor-pointer grid grid-cols-6 gap-16 pt-6 pb-6  border-b border-black">
+                    <div class="row-span-1 text-sm md:text-base font-black font-inter ">/03</div>
+                    <div class="row-span-1 text-2xl md:text-[40px] font-normal font-inter ">WHATSAPP</div>
+                </div>
+
+                <!-- Telegram -->
+                <div data-social="telegram" class="social-item cursor-pointer grid grid-cols-6 gap-16 pt-6 pb-6  border-b border-black">
+                    <div class="row-span-1 text-sm md:text-base font-black font-inter ">/04</div>
+                    <div class="row-span-1 text-2xl md:text-[40px] font-normal font-inter ">TELEGRAM</div>
+                </div>
+
+                <!-- VKontakte -->
+                <div data-social="vkontakte" class="social-item cursor-pointer grid grid-cols-6 gap-16 pt-6 pb-6  border-b border-black">
+                    <div class="row-span-1 text-sm md:text-base font-black font-inter ">/05</div>
+                    <div class="row-span-1 text-2xl md:text-[40px] font-normal font-inter ">VKONTAKTE</div>
+                </div>
+
+                <!-- Яндекс.Дзен -->
+                <div data-social="yandexdzen" class="social-item cursor-pointer grid grid-cols-6 gap-16 pt-6 pb-6  border-b border-black">
+                    <div class="row-span-1 text-sm md:text-base font-black font-inter ">/06</div>
+                    <div class="row-span-1 text-2xl md:text-[40px] font-normal font-inter ">ЯНДЕКС.ДЗЕН</div>
                 </div>
             </div>
 
-            <!-- Правая колонка - Изображение (только на десктопе) -->
-            <div class="hidden md:block basis-520">
-                <img class="w-full h-auto" src="https://placehold.co/520x606" alt="Социальные сети">
+            <!-- Примечание -->
+            <div class="text-xs md:text-sm font-normal font-inter">
+                *принадлежит компании Meta, признанной экстремистской организацией и запрещенной в РФ
             </div>
         </div>
-    </section>
+
+        <!-- Правая колонка - Изображение (только на десктопе) -->
+        <div class="hidden md:block basis-520 relative">
+            <img data-preview="instagram" class="absolute inset-0 w-full h-full object-cover transition-all duration-300 opacity-0 translate-x-36" src="https://placehold.co/520x606" alt="Социальные сети">
+            <img data-preview="youTube" class="absolute inset-0 w-full h-full object-cover transition-all duration-300 opacity-0 translate-x-36" src="https://placehold.co/520x606" alt="Социальные сети">
+            <img data-preview="whatsapp" class="absolute inset-0 w-full h-full object-cover transition-all duration-300 opacity-0 translate-x-36" src="https://placehold.co/520x606" alt="Социальные сети">
+            <img data-preview="telegram" class="absolute inset-0 w-full h-full object-cover transition-all duration-300 opacity-0 translate-x-36" src="https://placehold.co/520x606" alt="Социальные сети">
+            <img data-preview="vkontakte" class="absolute inset-0 w-full h-full object-cover transition-all duration-300 opacity-0 translate-x-36" src="https://placehold.co/520x606" alt="Социальные сети">
+            <img data-preview="yandexdzen" class="absolute inset-0 w-full h-full object-cover transition-all duration-300 opacity-0 translate-x-36" src="https://placehold.co/520x606" alt="Социальные сети">
+        </div>
+    </div>
+</section>
+    <script>
+
+    </script>
 </main>
 <script src="assets/js/main.js"></script>
 
