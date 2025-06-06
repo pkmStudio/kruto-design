@@ -847,6 +847,10 @@ a {
   display: none !important;
 }
 
+.font-inter {
+  font-family: "Golos UI VF", sans-serif;
+}
+
 @media (max-width: 768px){
   .menu__list:nth-child(2) > .menu__item:nth-child(1), .menu__item:nth-child(2) {
     display: none;
