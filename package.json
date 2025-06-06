@@ -1,4 +1,8 @@
 {
+  "scripts" : {
+    "build": "postcss src/assets/scss/main.css -o dist/assets/css/main.css",
+    "watch": "postcss src/assets/scss/main.css -o dist/assets/css/main.css --watch"
+  },
   "type": "module",
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.8",
@@ -26,6 +30,7 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
+    "postcss-cli": "^11.0.1",
     "swiper": "^11.2.8"
   }
 }
