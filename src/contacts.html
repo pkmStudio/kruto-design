@@ -1,68 +1,10 @@
 @@include("header/header.html") <!-- ✅ Подключаем хедер -->
 <main class="main mx-auto max-w-[1200px] overflow-hidden">
     <!-- Общий контейнер -->
-    <section class="w-full  py-12 px-4 md:px-6">
-        <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row gap-8 md:gap-12 md:items-center">
-
-            <!-- Левая колонка - Контакты -->
-            <div class="w-max max-md:mx-auto md:w-[45%]">
-                <h2 class="text-xl md:text-5xl font-bold font-inter leading-7 md:leading-[54px] mb-6 md:mb-12">
-                    КАК НАС НАЙТИ
-                </h2>
-
-                <div class="flex flex-col gap-4">
-                    <!-- Телефон -->
-                    <p class="flex items-baseline gap-2 ">
-                        <span class="text-[18px]  font-bold font-inter">+7 (495) 108 68 27</span>
-                        <span class="text-[18px]  font-normal font-inter">• ТЕЛЕФОН В ОФИСЕ</span>
-                    </p>
-
-                    <!-- WhatsApp -->
-                    <p class="flex items-baseline gap-2 ">
-                        <span class="text-[18px]  font-bold font-inter">+7(925) 732 36 73</span>
-                        <span class="text-[18px]  font-normal font-inter">• WHATSAPP</span>
-                    </p>
-
-                    <!-- Email -->
-                    <p class="flex items-baseline gap-2 ">
-                        <span class="text-[18px]  font-bold font-inter">info@krutodesign.ru</span>
-                        <span class="text-[18px]  font-normal font-inter">• ПО ВСЕМ ВОПРОСАМ</span>
-                    </p>
-
-                    <!-- Партнерам -->
-                    <p class="flex items-baseline gap-2 ">
-                        <span class="text-[18px]  font-bold font-inter">partner@krutodesign.ru</span>
-                        <span class="text-[18px]  font-normal font-inter">• ДЛЯ ПАРТНЕРОВ</span>
-                    </p>
-
-                    <!-- Адрес -->
-                    <p class="flex items-baseline gap-2">
-                        <span class="text-[18px]  font-bold font-inter">Москва, Рижский пр-д 13</span>
-                        <span class="text-[18px]  font-normal font-inter">• пн. - вс. 10:00-19:00</span>
-                    </p>
-                </div>
-            </div>
-
-            <!-- Правая колонка - Карта -->
-            <div class="w-full md:w-[55%] h-[300px] md:h-[500px] shadow-[0px_0px_20px_0px_rgba(0,0,0,0.10)]">
-                <!-- Контейнер для карты -->
-                <div id="map-container" class="w-full h-full">
-                    <!-- Здесь будет встроена карта -->
-                    <iframe
-                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A1a2b3c4d5e6f7g8h9i0j&amp;source=constructor"
-                            width="100%"
-                            height="100%"
-                            frameborder="0"
-                    ></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
+    @@include("find-us/find-us.html")
     <div class="container max-w[1200px] mx-auto w-full py-8 overflow-hidden">
         <div class="h-px bg-black"></div>
     </div>
-
-
     @@include("social-section/social-section.html")
 </main>
 <script src="assets/js/main.js"></script>
