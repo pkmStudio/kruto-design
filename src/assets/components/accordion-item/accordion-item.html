@@ -1,0 +1,26 @@
+<div class="accordion-item border-b border-b-black">
+    <div class="flex justify-between gap-8 py-6">
+        <p class="text-black text-2xl font-bold font-inter uppercase leading-[130%]">@@title</p>
+        <button class="accordion-button group relative w-10 h-10 flex items-center justify-center transition-all duration-500">
+            <!-- Черный крестик (по умолчанию) -->
+            <div class="absolute inset-0 flex items-center justify-center opacity-100 group-hover:opacity-0 transition-opacity duration-300">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 20H31" stroke="black" stroke-width="2"/>
+                    <path d="M20 9V31" stroke="black" stroke-width="2"/>
+                </svg>
+            </div>
+
+            <!-- Круг с крестиком (при наведении) -->
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z" fill="#8B8B77"/>
+                    <path d="M9 20H31" stroke="#E6E2D7" stroke-width="2"/>
+                    <path d="M20 9V31" stroke="#E6E2D7" stroke-width="2"/>
+                </svg>
+            </div>
+        </button>
+    </div>
+    <p class="accordion-content text-black text-base font-inter uppercase max-h-0 opacity-0 transition-all duration-300">
+        @@description
+    </p>
+</div>
