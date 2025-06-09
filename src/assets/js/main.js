@@ -31,3 +31,6 @@ import "./files/swiper.js";
 
 /* секция social*/
 import "../components/social-section/social-section.js"
+
+/* элемент аккардиона*/
+import "../components/accordion-item/accordion-item.js"
