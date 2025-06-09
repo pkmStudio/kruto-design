@@ -30,6 +30,8 @@
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
     --text-5xl: 3rem;
@@ -215,6 +217,9 @@
   .top-1\/2 {
     top: calc(1/2 * 100%);
   }
+  .top-\[-70px\] {
+    top: -70px;
+  }
   .top-\[1px\] {
     top: 1px;
   }
@@ -265,6 +270,12 @@
   }
   .left-\[10px\] {
     left: 10px;
+  }
+  .order-1 {
+    order: 1;
+  }
+  .order-2 {
+    order: 2;
   }
   .col-span-3 {
     grid-column: span 3 / span 3;
@@ -449,8 +460,14 @@
   .h-\[98px\] {
     height: 98px;
   }
+  .h-\[250px\] {
+    height: 250px;
+  }
   .h-\[300px\] {
     height: 300px;
+  }
+  .h-\[400px\] {
+    height: 400px;
   }
   .h-\[484px\] {
     height: 484px;
@@ -650,6 +667,9 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .gap-0 {
+    gap: calc(var(--spacing) * 0);
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
@@ -920,6 +940,9 @@
   .text-center {
     text-align: center;
   }
+  .text-left {
+    text-align: left;
+  }
   .font-\[\'Arial\'\] {
     font-family: 'Arial';
   }
@@ -932,6 +955,10 @@
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
   .text-4xl {
     font-size: var(--text-4xl);
@@ -964,6 +991,9 @@
   .text-\[18px\] {
     font-size: 18px;
   }
+  .text-\[40px\] {
+    font-size: 40px;
+  }
   .leading-7 {
     --tw-leading: calc(var(--spacing) * 7);
     line-height: calc(var(--spacing) * 7);
@@ -983,6 +1013,14 @@
   .leading-\[71px\] {
     --tw-leading: 71px;
     line-height: 71px;
+  }
+  .leading-\[72px\] {
+    --tw-leading: 72px;
+    line-height: 72px;
+  }
+  .leading-\[130\%\] {
+    --tw-leading: 130%;
+    line-height: 130%;
   }
   .leading-loose {
     --tw-leading: var(--leading-loose);
@@ -1090,6 +1128,16 @@
       margin-inline: auto;
     }
   }
+  .md\:order-1 {
+    @media (width >= 48rem) {
+      order: 1;
+    }
+  }
+  .md\:order-2 {
+    @media (width >= 48rem) {
+      order: 2;
+    }
+  }
   .md\:mx-auto {
     @media (width >= 48rem) {
       margin-inline: auto;
@@ -1115,6 +1163,11 @@
       display: none;
     }
   }
+  .md\:h-\[400px\] {
+    @media (width >= 48rem) {
+      height: 400px;
+    }
+  }
   .md\:h-\[500px\] {
     @media (width >= 48rem) {
       height: 500px;
@@ -1130,6 +1183,11 @@
       width: calc(var(--spacing) * 96);
     }
   }
+  .md\:w-\[42\%\] {
+    @media (width >= 48rem) {
+      width: 42%;
+    }
+  }
   .md\:w-\[45\%\] {
     @media (width >= 48rem) {
       width: 45%;
@@ -1138,6 +1196,11 @@
   .md\:w-\[55\%\] {
     @media (width >= 48rem) {
       width: 55%;
+    }
+  }
+  .md\:w-\[58\%\] {
+    @media (width >= 48rem) {
+      width: 58%;
     }
   }
   .md\:w-\[630px\] {
@@ -1175,6 +1238,11 @@
       align-items: center;
     }
   }
+  .md\:gap-0 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 0);
+    }
+  }
   .md\:gap-6 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 6);
@@ -1183,6 +1251,11 @@
   .md\:gap-8 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 8);
+    }
+  }
+  .md\:gap-10 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 10);
     }
   }
   .md\:gap-12 {
@@ -1208,6 +1281,11 @@
   .md\:py-8 {
     @media (width >= 48rem) {
       padding-block: calc(var(--spacing) * 8);
+    }
+  }
+  .md\:py-20 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 20);
     }
   }
   .md\:pb-12 {
@@ -1244,6 +1322,12 @@
       line-height: var(--tw-leading, var(--text-sm--line-height));
     }
   }
+  .md\:text-xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
   .md\:text-\[15px\] {
     @media (width >= 48rem) {
       font-size: 15px;
@@ -1252,6 +1336,11 @@
   .md\:text-\[40px\] {
     @media (width >= 48rem) {
       font-size: 40px;
+    }
+  }
+  .md\:text-\[55px\] {
+    @media (width >= 48rem) {
+      font-size: 55px;
     }
   }
   .md\:leading-\[50px\] {
