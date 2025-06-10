@@ -1,9 +1,36 @@
 @@include("header/header.html") <!-- ✅ Подключаем хедер -->
 <main class="main">
     @@include("baner-right-image-section/baner-right-image-section.html", {
-        "title": "ОТЗЫВЫ О ДИЗАЙН-ПРОЕКТАХ"
+        "title": "ОТЗЫВЫ О ДИЗАЙН-ПРОЕКТАХ",
+        "description1": "Отзывы благодарных клиентов, положительные эмоции от дизайна интерьера — главная цель студии KD Design.",
+        "description2": "Это вдохновляет нас создавать по-настоящему крутые дизайн-проекты для вас!",
     })
+    <section class="py-12 md:px-6">
+        <!-- Контейнер для отзывов -->
+        <div class="md:max-w-[1200px] md:mx-auto swiper otzivi-slider">
+        <!-- Десктопная версия (grid) -->
+        <div class="swiper-wrapper md:flex md:flex-row md:flex-wrap md:gap-4 justify-between md:pb-12">
+            <!-- Слайд 1 -->
+            <div class="swiper-slide md:w-[47%]">
+                @@include("otziv/otziv.html")
+            </div>
+            <!-- Слайд 2 -->
+            <div class="swiper-slide md:w-[47%]">
+                @@include("otziv/otziv.html")
+            </div>
 
+            <!-- Слайд 3 -->
+            <div class="swiper-slide md:w-[47%]">
+                @@include("otziv/otziv.html")
+            </div>
+            <!-- Слайд 4 -->
+            <div class="swiper-slide md:w-[47%]">
+                @@include("otziv/otziv.html")
+            </div>
+
+        </div>
+    </div>
+    </section>
     @@include("form-video/form-video-inverse.html")
 
 </main>
