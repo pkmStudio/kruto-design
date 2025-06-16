@@ -846,6 +846,99 @@ input[type=checkbox i] {
   font-family: "Golos UI VF", sans-serif;
 }
 
+.gallery {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+.gallery-img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+/* Соотношения сторон для изображений */
+.left-column .top-img {
+  aspect-ratio: 500/620;
+}
+
+.left-column .middle-img {
+  aspect-ratio: 1/1; /* 500/500 */
+}
+
+.left-column .bottom-img {
+  aspect-ratio: 500/620;
+}
+
+.right-column .gallery-img {
+  aspect-ratio: 670/840;
+}
+
+/* Отступ между правыми изображениями только на десктопе */
+/* На мобильных - все в одну колонку */
+.double-gallery {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.double-gallery-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.double-gallery-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1; /* Квадратные изображения */
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+/* Для очень широких экранов можно добавить отступы */
+@media (min-width: 768px){
+  .gallery-container {
+    flex-direction: row;
+  }
+  .left-column {
+    width: 42%; /* Примерно 500px от 1200px */
+    flex-shrink: 0;
+  }
+  .right-column {
+    width: 58%; /* Оставшееся пространство */
+  }
+  .right-column {
+    gap: 145px;
+  }
+  .double-gallery-container {
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+  }
+  .double-gallery-img {
+    max-width: 585px; /* Максимальный размер как в макете */
+    width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 1400px){
+  .double-gallery-container {
+    justify-content: space-between;
+  }
+}
 @media (max-width: 768px){
   .menu__list:nth-child(2) > .menu__item:nth-child(1), .menu__item:nth-child(2) {
     display: none;
@@ -889,9 +982,14 @@ input[type=checkbox i] {
     grid-template-columns: 1fr;
   }
 }
-
 @media (max-width: 767px){
   .icon-menu {
     display: block;
+  }
+  .column {
+    gap: 30px;
+  }
+  .gallery-img {
+    max-height: 80vh;
   }
 }

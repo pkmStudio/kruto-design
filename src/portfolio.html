@@ -1,1 +1,96 @@
 @@include("header/header.html") <!-- ✅ Подключаем хедер -->
+<div class="wrapper _container">
+@@include("main-block-portfolio/main-block-portfolio.html")
+
+<section class="portfolio-block">
+<!-- Filters Section -->
+<div class="bg-white">
+  <!-- Desktop Version -->
+  <div class="hidden md:flex max-w-[1200px] h-32 mx-auto">
+    <div class="flex space-x-[-1px] mt-[39px] w-full">
+      <button class="w-72 h-14 bg-stone-400 outline outline-1 outline-black outline-offset-[-1px] flex items-center justify-center">
+        <span class="text-white text-base font-medium uppercase">Все проекты</span>
+      </button>
+      <button class="w-72 h-14 outline outline-1 outline-black outline-offset-[-1px] flex items-center justify-center">
+        <span class="text-black text-base font-medium uppercase">Квартиры</span>
+      </button>
+      <button class="w-72 h-14 outline outline-1 outline-black outline-offset-[-1px] flex items-center justify-center">
+        <span class="text-black text-base font-medium uppercase">Дома/таунхаусы</span>
+      </button>
+      <button class="w-72 h-14 outline outline-1 outline-black outline-offset-[-1px] flex items-center justify-center">
+        <span class="text-black text-sm font-medium uppercase">коммерческие помещения</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Version -->
+  <div class="md:hidden w-full h-36">
+    <div class="grid grid-cols-2 gap-0 w-full max-w-[384px] mx-auto pt-6">
+      <button class="w-full h-12 bg-stone-400 outline outline-1 outline-black outline-offset-[-1px] flex items-center justify-center">
+        <span class="text-white text-sm font-medium uppercase">Все проекты</span>
+      </button>
+      <button class="w-full h-12 outline outline-1 outline-black outline-offset-[-1px] flex items-center justify-center">
+        <span class="text-black text-sm font-medium uppercase">Квартиры</span>
+      </button>
+      <button class="w-full h-12 outline outline-1 outline-black outline-offset-[-1px] flex items-center justify-center">
+        <span class="text-black text-sm font-medium uppercase">Дома/таунхаусы</span>
+      </button>
+      <button class="w-full h-12 outline outline-1 outline-black outline-offset-[-1px] flex items-center justify-center">
+        <span class="text-black text-sm font-medium uppercase text-center leading-tight">
+          коммерческие<br/>помещения
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+<!-- Projects Section -->
+  <!-- Year Heading -->
+  <div class="max-w-[1200px] mx-auto h-24 flex items-center px-4 md:px-0">
+    <h2 class="text-4xl font-bold">/2024</h2>
+  </div>
+
+  <!-- Desktop Projects Grid -->
+  <div class="hidden md:block max-w-[960px] mx-auto">
+    <div class="grid grid-cols-3 gap-x-20 gap-y-12 pb-12">
+       @@include("card-item/card-item.html")
+ @@include("card-item/card-item.html")
+  @@include("card-item/card-item.html")
+   @@include("card-item/card-item.html")
+    @@include("card-item/card-item.html")
+     @@include("card-item/card-item.html")
+      @@include("card-item/card-item.html")
+       @@include("card-item/card-item.html")
+        @@include("card-item/card-item.html")
+    </div>
+  </div>
+
+  <!-- Mobile Projects Grid -->
+  <div class="md:hidden max-w-[384px] mx-auto">
+    <div class="grid grid-cols-1 gap-y-8 pb-8">
+      <!-- Project Item -->
+       @@include("card-item/card-item.html")
+        @@include("card-item/card-item.html")
+         @@include("card-item/card-item.html")
+    </div>
+  </div>
+
+  <!-- Load More Button -->
+  <div class="text-center py-8">
+    <button class="text-xs font-bold">Загрузить еще</button>
+  </div>
+</section>
+</div>
+     @@include("promo-form/promo-form.html")
+
+    <div class="wrapper _container">
+
+  
+ @@include("services/services.html")
+  @@include("social-section/social-section.html")
+
+   @@include("find-us/find-us.html")
+
+</div>
+</main>
+<script src="assets/js/main.js"></script>
+@@include("footer/footer.html") <!-- ✅ Подключаем футер -->
