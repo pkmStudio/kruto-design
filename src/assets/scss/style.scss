@@ -73,3 +73,125 @@
 .font-inter {
     font-family: "Golos UI VF", sans-serif;
 }
+
+
+       .gallery {
+            max-width: 1800px;
+            margin: 0 auto;
+            
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        @media (min-width: 768px) {
+            .gallery-container {
+                flex-direction: row;
+            }
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 100%;
+        }
+
+        @media (min-width: 768px) {
+            .left-column {
+                width: 42%; /* Примерно 500px от 1200px */
+                flex-shrink: 0;
+            }
+            
+            .right-column {
+                width: 58%; /* Оставшееся пространство */
+            }
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Соотношения сторон для изображений */
+        .left-column .top-img {
+            aspect-ratio: 500/620;
+        }
+
+        .left-column .middle-img {
+            aspect-ratio: 1/1; /* 500/500 */
+        }
+
+        .left-column .bottom-img {
+            aspect-ratio: 500/620;
+        }
+
+        .right-column .gallery-img {
+            aspect-ratio: 670/840;
+        }
+
+        /* Отступ между правыми изображениями только на десктопе */
+        @media (min-width: 768px) {
+            .right-column {
+                gap: 145px;
+            }
+        }
+
+        /* На мобильных - все в одну колонку */
+        @media (max-width: 767px) {
+            .column {
+                gap: 30px;
+            }
+            
+            .gallery-img {
+                max-height: 80vh;
+            }
+        }
+
+            .double-gallery {
+            max-width: 1800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .double-gallery-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        @media (min-width: 768px) {
+            .double-gallery-container {
+                flex-direction: row;
+                gap: 30px;
+                justify-content: center;
+            }
+        }
+
+        .double-gallery-img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1/1; /* Квадратные изображения */
+            object-fit: cover;
+            display: block;
+        }
+
+        @media (min-width: 768px) {
+            .double-gallery-img {
+                max-width: 585px; /* Максимальный размер как в макете */
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        /* Для очень широких экранов можно добавить отступы */
+        @media (min-width: 1400px) {
+            .double-gallery-container {
+                justify-content: space-between;
+            }
+        }

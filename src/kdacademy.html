@@ -1,0 +1,477 @@
+
+@@include("header/header.html") <!-- ✅ Подключаем хедер -->
+
+<div class="relative bg-gray-950 overflow-hidden min-h-screen md:h-[675px] ">
+  <!-- Основной контент -->
+  <div class="container mx-auto px-4 md:px-6 py-8 md:py-0 relative z-10 flex flex-col md:flex-row items-center h-full">
+    <!-- Текстовая часть -->
+    <div class="w-full md:w-1/2 relative z-10 md:pr-8">
+      <!-- Декоративные элементы (только для десктопа) -->
+      <div class="hidden md:block absolute w-80 h-72 -left-20 top-20 rounded-full blur-[50px] opacity-60 bg-purple-400"></div>
+      
+      <!-- Текстовый контент -->
+      <div class="space-y-6 md:space-y-8">
+        <!-- Бейджи -->
+        <div class="flex flex-wrap gap-2 md:gap-4">
+          <div class="rounded-[30px] outline outline-1 outline-purple-400 px-4 py-1.5">
+            <span class="text-white text-xs md:text-base uppercase">старт 17 июня</span>
+          </div>
+          <div class="rounded-[30px] outline outline-1 outline-purple-400 px-4 py-1.5">
+            <span class="text-white text-xs md:text-sm uppercase">2 месяца</span>
+          </div>
+          <div class="rounded-[30px] outline outline-1 outline-purple-400 px-4 py-1.5">
+            <span class="text-white text-xs md:text-base uppercase">онлайн / офлайн</span>
+          </div>
+        </div>
+        
+        <div class="space-y-2 md:space-y-4">
+          <p class="text-white text-sm md:text-xl">Обучение для дизайнеров интерьера</p>
+          <h2 class="text-purple-400 text-3xl md:text-5xl font-medium">РЕАЛИЗАЦИЯ<br/>ПРОЕКТА от А до Я:</h2>
+          <p class="text-white text-sm md:text-2xl">авторский надзор и комплектация</p>
+          <p class="text-white text-xs md:text-xl">Получите навыки ведения авторского надзора<br/>и комплектации и начните зарабатывать</p>
+        </div>
+        
+        <div class="bg-purple-400 rounded-[30px] px-4 py-2 md:py-3 w-full md:w-auto">
+          <p class="text-stone-950 text-xs md:text-xl text-center">от 800 тыс. — 1 млн рублей за проект</p>
+        </div>
+        
+        <button class="bg-white rounded-[30px] px-6 py-2 flex items-center gap-2">
+          <span class="text-stone-950 text-xs md:text-sm">Узнать подробнее</span>
+          <svg class="w-4 h-4" viewBox="0 0 16 16" fill="none">
+            <path d="M1 8H15M15 8L8 1M15 8L8 15" stroke="black" stroke-width="2"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Изображение и декоративные элементы -->
+    <div class="w-full md:w-1/2 relative mt-8 md:mt-0">
+      <!-- Декоративные слои (только для десктопа) -->
+      <div class="hidden md:block absolute w-[708px] h-[516px] left-0 top-0 bg-gradient-to-l from-neutral-900 to-indigo-950 rounded-xl -z-10"></div>
+      <div class="hidden md:block absolute w-[708px] h-[516px] left-0 top-[67.5px] bg-gradient-to-l from-neutral-900 to-indigo-950 rounded-xl -z-20"></div>
+      <div class="hidden md:block absolute w-[708px] h-[516px] left-0 top-[135px] bg-gradient-to-l from-neutral-900 to-indigo-950 rounded-xl -z-30"></div>
+      
+      <!-- Изображение -->
+      <div class="relative">
+        <img class="w-full max-w-[348px] md:w-80 h-auto md:h-[648px] object-cover mx-auto" src="https://placehold.co/348x648" alt="Изображение проекта" />
+        
+        <!-- Декоративные углы (адаптивные) -->
+        <div class="hidden md:block absolute w-16 h-16 bg-gray-950 top-0 left-0"></div>
+        <div class="hidden md:block absolute w-16 h-16 bg-gray-950 top-0 right-0"></div>
+        <div class="hidden md:block absolute w-16 h-16 bg-gray-950 bottom-0 right-0"></div>
+        <div class="hidden md:block absolute w-16 h-16 bg-gray-950 bottom-0 left-0"></div>
+        
+        <!-- Для мобильной версии -->
+        <div class="md:hidden absolute w-14 h-14 bg-gray-950 top-0 left-0"></div>
+        <div class="md:hidden absolute w-14 h-14 bg-gray-950 top-0 right-0"></div>
+        <div class="md:hidden absolute w-14 h-14 bg-gray-950 bottom-0 right-0"></div>
+        <div class="md:hidden absolute w-14 h-14 bg-gray-950 bottom-0 left-0"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="relative bg-gray-950 overflow-hidden w-full min-h-screen py-12 md:py-0 md:h-[973px]">
+  <!-- Декоративные элементы фона -->
+  <div class="hidden md:block absolute w-80 h-72 -left-32 top-[436px] rounded-full blur-[50px] opacity-60 bg-fuchsia-300"></div>
+  <div class="hidden md:block absolute w-80 h-72 -left-40 top-[297px] rounded-full blur-[50px] opacity-60 bg-purple-400"></div>
+  
+  <!-- Мобильные декоративные элементы -->
+  <div class="md:hidden absolute w-48 h-48 -left-20 top-64 rounded-full blur-[50px] opacity-60 bg-purple-400"></div>
+
+  <div class="container mx-auto px-4 md:px-6 relative z-10">
+    <!-- Заголовок -->
+    <h2 class="text-white text-3xl md:text-5xl font-normal mb-8 md:mb-0 md:absolute md:left-[66px] md:top-[125px]">О школе</h2>
+    
+    <div class="flex flex-col md:flex-row gap-8 md:gap-12">
+      <!-- Левая колонка (изображение) -->
+      <div class="w-full md:w-1/3 relative">
+        <img class="w-full h-auto md:w-80 md:h-96 rounded-xl" src="https://placehold.co/348x400" alt="О школе дизайна" />
+      </div>
+      
+      <!-- Правая колонка (текст) -->
+      <div class="w-full md:w-2/3 flex flex-col">
+        <div class="rounded-xl border border-purple-400 p-6 md:p-8 mb-8 md:mb-12">
+          <p class="text-white text-base md:text-xl mb-4 md:mb-6">
+            На базе студии дизайна интерьеров KD design мы основали<br class="hidden md:block"/>
+            академию для дизайнеров интерьера.
+          </p>
+          <p class="text-white text-base md:text-xl mb-4 md:mb-6">
+            Мы разработали сильнейшую программу, в которой передали<br class="hidden md:block"/>
+            весь наш опыт и знания.
+          </p>
+          <p class="text-white text-base md:text-xl">
+            Мы хотим не просто научить вас профессии и отпустить<br class="hidden md:block"/>
+            в свободное плавание, а подкрепить всё практическими<br class="hidden md:block"/>
+            знаниями. Глобально, наша цель — вырастить будущих коллег<br class="hidden md:block"/>
+            в команду, а также лучших специалистов и партнеров.
+          </p>
+        </div>
+        
+        <!-- Декоративный элемент (только десктоп) -->
+        <div class="hidden md:block absolute w-20 h-20 opacity-20 bg-purple-400 top-[280px] right-8"></div>
+        
+        <!-- Основной текст -->
+        <p class="text-white text-center md:text-left text-lg md:text-xl mb-8 md:mb-12">
+          Наша студия дизайна KD Design уже 7 лет занимает<br class="hidden md:block"/>
+          лидерские позиции на рынке.
+        </p>
+        
+        <!-- Статистика -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-4 mb-8 md:mb-12">
+          <div class="text-center">
+            <div class="text-purple-400 text-3xl md:text-4xl font-normal mb-2">500+</div>
+            <p class="text-white text-sm md:text-sm">
+              успешных проектов<br/>
+              реализовала наша студия
+            </p>
+          </div>
+          <div class="text-center">
+            <div class="text-purple-400 text-3xl md:text-4xl font-normal mb-2">230+</div>
+            <p class="text-white text-sm md:text-sm">
+              проектов с ведением авторского<br/>
+              надзора и комплектации
+            </p>
+          </div>
+          <div class="text-center">
+            <div class="text-purple-400 text-3xl md:text-4xl font-normal mb-2">60+</div>
+            <p class="text-white text-sm md:text-sm">
+              человек составляет штат<br/>
+              нашей студии
+            </p>
+          </div>
+        </div>
+        
+        <!-- Кнопка -->
+        <button class="self-center md:self-start rounded-[30px] outline outline-1 outline-white px-6 py-2 flex items-center gap-2 hover:bg-white/10 transition-colors">
+          <span class="text-white text-xs md:text-sm">Подробнее о студии</span>
+          <svg class="w-4 h-4" viewBox="0 0 16 16" fill="none">
+            <path d="M1 8H15M15 8L8 1M15 8L8 15" stroke="white" stroke-width="2"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="relative bg-gray-950 overflow-hidden w-full py-12 md:py-16">
+  <!-- Заголовок -->
+  <h3 class="text-white text-xl md:text-2xl text-center mb-8 md:mb-12">
+    Мы сотрудничаем с ведущими брендами
+  </h3>
+
+  <!-- Контейнер для логотипов -->
+  <div class="relative w-full max-w-7xl mx-auto px-4">
+    <!-- Основная сетка логотипов -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6">
+      <!-- Логотип 1 -->
+      <div class="bg-slate-800 rounded-xl h-32 flex items-center justify-center p-4">
+        <div class="flex space-x-2">
+          <div class="w-6 h-6 bg-purple-400"></div>
+          <div class="w-6 h-6 bg-purple-400"></div>
+          <div class="w-6 h-7 bg-purple-400"></div>
+          <div class="w-6 h-6 bg-purple-400"></div>
+        </div>
+      </div>
+      
+      <!-- Логотип 2 -->
+      <div class="bg-slate-800 rounded-xl h-32 flex items-center justify-center p-4">
+        <div class="relative w-32 h-20">
+          <img class="w-full h-full object-contain" src="https://placehold.co/127x76" alt="Логотип партнера" />
+          <div class="absolute inset-0 bg-purple-400 opacity-0 hover:opacity-20 transition-opacity"></div>
+        </div>
+      </div>
+      
+      <!-- Логотип 3 -->
+      <div class="bg-slate-800 rounded-xl h-32 flex items-center justify-center p-4">
+        <div class="w-full flex flex-col items-center">
+          <div class="w-full h-4 bg-purple-400 mb-2"></div>
+          <div class="flex space-x-1">
+            <div class="w-5 h-3 bg-purple-400"></div>
+            <div class="w-5 h-3 bg-purple-400"></div>
+            <div class="w-4 h-3 bg-purple-400"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Логотип 4 -->
+      <div class="bg-slate-800 rounded-xl h-32 flex items-center justify-center p-4">
+        <div class="relative w-32 h-6">
+          <img class="w-full h-full object-contain" src="https://placehold.co/130x24" alt="Логотип партнера" />
+          <div class="absolute inset-0 bg-purple-400 opacity-0 hover:opacity-20 transition-opacity"></div>
+        </div>
+      </div>
+      
+      <!-- Логотип 5 -->
+      <div class="bg-slate-800 rounded-xl h-32 flex items-center justify-center p-4">
+        <div class="relative w-32 h-9">
+          <img class="w-full h-full object-contain" src="https://placehold.co/130x38" alt="Логотип партнера" />
+          <div class="absolute inset-0 bg-purple-400 opacity-0 hover:opacity-20 transition-opacity"></div>
+        </div>
+      </div>
+      
+      <!-- Логотип 6 -->
+      <div class="bg-slate-800 rounded-xl h-32 flex items-center justify-center p-4">
+        <div class="relative w-32 h-6">
+          <img class="w-full h-full object-contain" src="https://placehold.co/130x24" alt="Логотип партнера" />
+          <div class="absolute inset-0 bg-purple-400 opacity-0 hover:opacity-20 transition-opacity"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Дополнительные логотипы для десктопа -->
+    <div class="hidden md:grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6 mt-6">
+      <!-- Логотип 7 -->
+      <div class="bg-slate-800 rounded-xl h-32 flex items-center justify-center p-4">
+        <div class="flex flex-wrap justify-center gap-1 w-32">
+          <div class="w-4 h-5 bg-purple-400"></div>
+          <div class="w-4 h-4 bg-purple-400"></div>
+          <div class="w-4 h-5 bg-purple-400"></div>
+          <div class="w-5 h-5 bg-purple-400"></div>
+          <div class="w-4 h-4 bg-purple-400"></div>
+          <div class="w-10 h-4 bg-purple-400"></div>
+        </div>
+      </div>
+      
+      <!-- Логотип 8 -->
+      <div class="bg-slate-800 rounded-xl h-32 flex items-center justify-center p-4">
+        <div class="relative w-32 h-6">
+          <img class="w-full h-full object-contain" src="https://placehold.co/130x24" alt="Логотип партнера" />
+          <div class="absolute inset-0 bg-purple-400 opacity-0 hover:opacity-20 transition-opacity"></div>
+        </div>
+      </div>
+      
+      <!-- Логотип 9 -->
+      <div class="bg-slate-800 rounded-xl h-32 flex items-center justify-center p-4">
+        <div class="w-full flex flex-col items-center">
+          <div class="w-full h-4 bg-purple-400 mb-2"></div>
+          <div class="flex space-x-1">
+            <div class="w-5 h-3 bg-purple-400"></div>
+            <div class="w-5 h-3 bg-purple-400"></div>
+            <div class="w-4 h-3 bg-purple-400"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Логотип 10 -->
+      <div class="bg-slate-800 rounded-xl h-32 flex items-center justify-center p-4">
+        <div class="relative w-32 h-20">
+          <img class="w-full h-full object-contain" src="https://placehold.co/127x76" alt="Логотип партнера" />
+          <div class="absolute inset-0 bg-purple-400 opacity-0 hover:opacity-20 transition-opacity"></div>
+        </div>
+      </div>
+      
+      <!-- Логотип 11 -->
+      <div class="bg-slate-800 rounded-xl h-32 flex items-center justify-center p-4">
+        <div class="flex space-x-2">
+          <div class="w-6 h-6 bg-purple-400"></div>
+          <div class="w-6 h-6 bg-purple-400"></div>
+          <div class="w-6 h-7 bg-purple-400"></div>
+          <div class="w-6 h-6 bg-purple-400"></div>
+        </div>
+      </div>
+      
+      <!-- Логотип 12 -->
+      <div class="bg-slate-800 rounded-xl h-32 flex items-center justify-center p-4">
+        <div class="relative w-36 h-9">
+          <img class="w-full h-full object-contain" src="https://placehold.co/147x37" alt="Логотип партнера" />
+          <div class="absolute inset-0 bg-purple-400 opacity-0 hover:opacity-20 transition-opacity"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-gray-950 px-4 py-16 md:py-32 relative overflow-hidden">
+  <!-- Blur circle background -->
+  <div class="hidden md:block w-96 h-96 absolute right-0 top-[85px] rounded-full blur-[50px] opacity-60 bg-purple-400"></div>
+  
+  <!-- Title -->
+  <h2 class="text-white text-3xl md:text-5xl font-normal text-center md:text-left mb-12 md:mb-24 md:ml-[66px]">
+    Для кого наш курс
+  </h2>
+  
+  <!-- Cards grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+    <!-- Card 1 -->
+    <div class="bg-indigo-950 rounded-xl p-6 relative">
+      <div class="flex items-start gap-6">
+        <div class="w-10 h-10 flex-shrink-0 bg-purple-400 rounded-[30px] flex items-center justify-center text-stone-950 text-xl font-normal">
+          1
+        </div>
+        <h3 class="text-white text-xl font-medium leading-relaxed">
+          Для начинающих дизайнеров интерьера
+        </h3>
+      </div>
+      <p class="text-white text-sm font-normal mt-6 md:mt-12">
+        Вы проходите или уже завершили свое первое обучение и хотите иметь постоянный поток клиентов на свои услуги
+      </p>
+    </div>
+    
+    <!-- Card 2 -->
+    <div class="bg-indigo-950 rounded-xl p-6 relative">
+      <div class="flex items-start gap-6">
+        <div class="w-10 h-10 flex-shrink-0 bg-purple-400 rounded-[30px] flex items-center justify-center text-stone-950 text-xl font-normal">
+          2
+        </div>
+        <h3 class="text-white text-xl font-medium leading-relaxed">
+          Для тех, кто работает в компании
+        </h3>
+      </div>
+      <p class="text-white text-sm font-normal mt-6 md:mt-12">
+        Вы уже работаете дизайнеров интерьера в компании, но задумываетесь уйти в частные заказы и построить свое имя на рынке
+      </p>
+    </div>
+    
+    <!-- Card 3 -->
+    <div class="bg-indigo-950 rounded-xl p-6 relative">
+      <div class="flex items-start gap-6">
+        <div class="w-10 h-10 flex-shrink-0 bg-purple-400 rounded-[30px] flex items-center justify-center text-stone-950 text-xl font-normal">
+          3
+        </div>
+        <h3 class="text-white text-xl font-medium leading-relaxed">
+          Для тех, кто застрял на одном уровне дохода
+        </h3>
+      </div>
+      <p class="text-white text-sm font-normal mt-6 md:mt-12">
+        Вы уже берете частные заказы, но застряли на одном уровне дохода и хотите зарабатывать с одного проекта от 800 тыс — 1 млн рублей
+      </p>
+    </div>
+    
+    <!-- Card 4 -->
+    <div class="bg-indigo-950 rounded-xl p-6 relative">
+      <div class="flex items-start gap-6">
+        <div class="w-10 h-10 flex-shrink-0 bg-purple-400 rounded-[30px] flex items-center justify-center text-stone-950 text-xl font-normal">
+          4
+        </div>
+        <h3 class="text-white text-xl font-medium leading-relaxed">
+          Для тех, кто хочет повысить свои компетенции
+        </h3>
+      </div>
+      <p class="text-white text-sm font-normal mt-6 md:mt-12">
+        Вы уже начали продавать услуги авторского надзора и комплектации, но не уверены в структуре своих знаний, боитесь ошибиться, потерять деньги и репутацию
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="bg-gray-950 px-4 py-16 md:py-32 relative overflow-hidden">
+  <!-- Blur circles background -->
+  <div class="hidden md:block w-80 h-72 absolute right-[100px] top-[302px] rounded-full blur-[50px] opacity-50 bg-purple-400"></div>
+  <div class="hidden md:block w-80 h-80 absolute right-[50px] top-[374px] rounded-full blur-[50px] opacity-50 bg-fuchsia-300"></div>
+  
+  <!-- Title -->
+  <h2 class="text-white text-3xl md:text-5xl font-normal text-center md:text-left max-w-6xl mx-auto mb-12 md:mb-24">
+    Почему именно наш курс
+  </h2>
+  
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+    <!-- Image column -->
+    <div class="md:order-1">
+      <img class="w-full h-auto md:h-[520px] object-cover rounded-xl" src="https://placehold.co/528x520" alt="Курс по дизайну интерьера" />
+    </div>
+    
+    <!-- Benefits column -->
+    <div class="space-y-6">
+      <!-- Benefit 1 -->
+      <div class="bg-gray-950 rounded-xl p-6 border border-purple-400 border-opacity-50">
+        <div class="flex items-start gap-6">
+          <div class="w-8 h-8 flex-shrink-0 bg-purple-400 rounded flex items-center justify-center">
+            <img class="w-6 h-6" src="https://placehold.co/24x24" alt="Иконка" />
+          </div>
+          <div>
+            <h3 class="text-purple-400 text-xl font-medium leading-relaxed">Офлайн выезды на объекты</h3>
+            <p class="text-white text-xs font-normal mt-4">
+              В рамках программы мы проведем в Москве 4 офлайн выезда на объекты, чтобы вы смогли вживую перенять весь наш опыт реализации проектов
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Benefit 2 -->
+      <div class="bg-gray-950 rounded-xl p-6 border border-purple-400 border-opacity-50">
+        <div class="flex items-start gap-6">
+          <div class="w-8 h-8 flex-shrink-0 bg-purple-400 rounded flex items-center justify-center">
+            <img class="w-6 h-6" src="https://placehold.co/24x25" alt="Иконка" />
+          </div>
+          <div>
+            <h3 class="text-purple-400 text-xl font-medium leading-relaxed">Сертификат об окончании обучения</h3>
+            <p class="text-white text-xs font-normal mt-4">
+              После сдачи финального экзамена вы получите сертификат о прохождении нашего обучения, который подтвердит ваши навыки и знания
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Benefit 3 -->
+      <div class="bg-gray-950 rounded-xl p-6 border border-purple-400 border-opacity-50">
+        <div class="flex items-start gap-6">
+          <div class="w-8 h-8 flex-shrink-0 bg-purple-400 rounded flex items-center justify-center">
+            <img class="w-6 h-6" src="https://placehold.co/24x24" alt="Иконка" />
+          </div>
+          <div>
+            <h3 class="text-purple-400 text-xl font-medium leading-relaxed">Стажировка в студии дизайна KD Design</h3>
+            <p class="text-white text-xs font-normal mt-4">
+              В зависимости от выбранного тарифа у вас будет возможность попасть на стажировку в нашу студию дизайна интерьера KD Design
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Benefit 4 -->
+      <div class="bg-gray-950 rounded-xl p-6 border border-purple-400 border-opacity-50">
+        <div class="flex items-start gap-6">
+          <div class="w-8 h-8 flex-shrink-0 bg-purple-400 rounded flex items-center justify-center">
+            <img class="w-6 h-6" src="https://placehold.co/24x24" alt="Иконка" />
+          </div>
+          <div>
+            <h3 class="text-purple-400 text-xl font-medium leading-relaxed">Zoom-разборы от преподавателей</h3>
+            <p class="text-white text-xs font-normal mt-4">
+              Наши преподаватели проведут для вас zoom-встречи, на которых разберут любые ситуации и вопросы, связанные с вашими текущими проектами, а так же будут на связи в чате все время обучения
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Benefit 5 -->
+      <div class="bg-gray-950 rounded-xl p-6 border border-purple-400 border-opacity-50">
+        <div class="flex items-start gap-6">
+          <div class="w-8 h-8 flex-shrink-0 bg-purple-400 rounded flex items-center justify-center">
+            <img class="w-6 h-6" src="https://placehold.co/24x24" alt="Иконка" />
+          </div>
+          <div>
+            <h3 class="text-purple-400 text-xl font-medium leading-relaxed">Развитие личного бренда</h3>
+            <p class="text-white text-xs font-normal mt-4">
+              Продюсер нашей академии проведет для всех учеников большую онлайн-лекцию, где расскажет, как именно вам развивать свои социальные сети и разберет все способы привлечения клиентов на ваши услуги
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Benefit 6 -->
+      <div class="bg-gray-950 rounded-xl p-6 border border-purple-400 border-opacity-50">
+        <div class="flex items-start gap-6">
+          <div class="w-8 h-8 flex-shrink-0 bg-purple-400 rounded flex items-center justify-center">
+            <img class="w-6 h-6" src="https://placehold.co/24x24" alt="Иконка" />
+          </div>
+          <div>
+            <h3 class="text-purple-400 text-xl font-medium leading-relaxed">Дополнительные материалы</h3>
+            <p class="text-white text-xs font-normal mt-4">
+              Мы подготовили полный чек–лист реализации проекта со всеми этапами ведения авторского надзора и комплектации, который поможет вам не допустить ошибок при реализации, а значит, сохранить деньги и время
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Button -->
+  <div class="max-w-6xl mx-auto mt-12 md:mt-24 flex justify-center md:justify-end">
+    <button class="bg-white rounded-[30px] px-8 py-3 flex items-center gap-2 hover:bg-opacity-90 transition">
+      <span class="text-stone-950 text-xs font-normal">Стать участником</span>
+      <svg class="w-4 h-4" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9 4L13 8L9 12" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </div>
+</div>
