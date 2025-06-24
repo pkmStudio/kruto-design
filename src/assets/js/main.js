@@ -34,3 +34,7 @@ import "../components/social-section/social-section.js"
 
 /* элемент аккардиона*/
 import "../components/accordion-item/accordion-item.js"
+
+/* модалка */
+import "../components/modal-quiz/modal-quiz.js"
+

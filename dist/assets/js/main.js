@@ -10182,6 +10182,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+;// ./src/assets/components/modal-quiz/modal-quiz.js
+document.addEventListener('DOMContentLoaded', () => {
+    const openModalButtons = document.querySelectorAll('.open-modal')
+    const modal = document.querySelector('[data-modal]')
+    if (!modal) return
+
+    modal.querySelector('.close-modal').addEventListener('click', () => {
+        modal.classList.add('hidden')
+    })
+
+    openModalButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            modal.classList.remove('hidden')
+        })
+    })
+});
 ;// ./src/assets/js/main.js
 /*
 (i) Код попадает в итоговый файл,
@@ -10218,6 +10234,11 @@ addTouchClass();
 
 
 /* элемент аккардиона*/
+
+
+/* модалка */
+
+
 
 /******/ })()
 ;
